@@ -4,8 +4,10 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @SpringBootApplication
+@EnableScheduling
 public class DemoApplication {
 
 	public static void main(String[] args) {
@@ -14,10 +16,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации пула потоков при старте приложения. */
+	/** Запуск демонстрации Callable и Future при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(ThreadPoolDemoService threadPoolDemoService) {
-		return args -> threadPoolDemoService.runThreadPoolDemo();
+	public CommandLineRunner threadDemoRunner(CallableFutureDemoService callableFutureDemoService) {
+		return args -> callableFutureDemoService.runCallableFutureDemo();
 	}
 
 }
