@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации жизненного цикла потоков при старте приложения. */
+	/** Запуск сравнения stream() и parallelStream() при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(ThreadLifecycleService threadLifecycleService) {
-		return args -> threadLifecycleService.runLifecycleDemo();
+	public CommandLineRunner threadDemoRunner(StreamBenchmarkService streamBenchmarkService) {
+		return args -> streamBenchmarkService.runStreamBenchmark();
 	}
 
 }
