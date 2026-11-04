@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации буфера на ReentrantLock и Condition при старте приложения. */
+	/** Запуск демонстрации volatile-флага и atomic-переменных при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(BoundedBufferDemoService boundedBufferDemoService) {
-		return args -> boundedBufferDemoService.runBoundedBufferDemo();
+	public CommandLineRunner threadDemoRunner(VolatileAtomicsDemoService volatileAtomicsDemoService) {
+		return args -> volatileAtomicsDemoService.runVolatileAtomicsDemo();
 	}
 
 }
