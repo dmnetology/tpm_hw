@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск сравнения stream() и parallelStream() при старте приложения. */
+	/** Запуск демонстрации синхронизации потоков при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(StreamBenchmarkService streamBenchmarkService) {
-		return args -> streamBenchmarkService.runStreamBenchmark();
+	public CommandLineRunner threadDemoRunner(SynchronizationDemoService synchronizationDemoService) {
+		return args -> synchronizationDemoService.runSynchronizationDemo();
 	}
 
 }
