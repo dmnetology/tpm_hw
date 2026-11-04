@@ -16,6 +16,7 @@ Spring Boot, встроенная база H2.
 - `task10` — Домашнее задание 10. CompletableFuture (асинхронное программирование)
 - `task11` — Домашнее задание 11. Fork/Join Framework
 - `task12` — Домашнее задание 12. Многопоточные коллекции
+- `task13` — Домашнее задание 13. BlockingQueue и Producer-Consumer
 
 ## Запуск
 
