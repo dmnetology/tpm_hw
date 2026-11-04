@@ -16,10 +16,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации многопоточных коллекций при старте приложения. */
+	/** Запуск демонстрации BlockingQueue при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(EventSystemDemoService eventSystemDemoService) {
-		return args -> eventSystemDemoService.runEventSystemDemo();
+	public CommandLineRunner threadDemoRunner(BlockingQueueDemoService blockingQueueDemoService) {
+		return args -> blockingQueueDemoService.runBlockingQueueDemo();
 	}
 
 }
