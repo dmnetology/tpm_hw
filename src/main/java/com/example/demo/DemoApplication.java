@@ -16,10 +16,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации CompletableFuture при старте приложения. */
+	/** Запуск демонстрации Fork/Join при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(CompletableFutureDemoService completableFutureDemoService) {
-		return args -> completableFutureDemoService.runCompletableFutureDemo();
+	public CommandLineRunner threadDemoRunner(ForkJoinDemoService forkJoinDemoService) {
+		return args -> forkJoinDemoService.runForkJoinDemo();
 	}
 
 }
