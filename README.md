@@ -11,6 +11,7 @@ Spring Boot, встроенная база H2.
 - `task5` — Домашнее задание 5. Блокировка доступа к ресурсам. ReentrantLock и Condition
 - `task6` — Домашнее задание 6. Volatile и atomic-переменные
 - `task7` — Домашнее задание 7. Deadlock, Livelock, Starvation
+- `task8` — Домашнее задание 8. Пул потоков (Thread Pool)
 
 ## Запуск
 
