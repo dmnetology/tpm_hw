@@ -12,6 +12,7 @@ Spring Boot, встроенная база H2.
 - `task6` — Домашнее задание 6. Volatile и atomic-переменные
 - `task7` — Домашнее задание 7. Deadlock, Livelock, Starvation
 - `task8` — Домашнее задание 8. Пул потоков (Thread Pool)
+- `task9` — Домашнее задание 9. Callable и Future
 
 ## Запуск
 
