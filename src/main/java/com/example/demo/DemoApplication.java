@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации deadlock, livelock и starvation при старте приложения. */
+	/** Запуск демонстрации пула потоков при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(LockProblemsDemoService lockProblemsDemoService) {
-		return args -> lockProblemsDemoService.runLockProblemsDemo();
+	public CommandLineRunner threadDemoRunner(ThreadPoolDemoService threadPoolDemoService) {
+		return args -> threadPoolDemoService.runThreadPoolDemo();
 	}
 
 }
