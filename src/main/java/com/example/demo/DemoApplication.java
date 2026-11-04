@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации синхронизации потоков при старте приложения. */
+	/** Запуск демонстрации буфера на ReentrantLock и Condition при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(SynchronizationDemoService synchronizationDemoService) {
-		return args -> synchronizationDemoService.runSynchronizationDemo();
+	public CommandLineRunner threadDemoRunner(BoundedBufferDemoService boundedBufferDemoService) {
+		return args -> boundedBufferDemoService.runBoundedBufferDemo();
 	}
 
 }
