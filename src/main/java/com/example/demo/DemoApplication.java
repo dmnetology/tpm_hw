@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации потоков при старте приложения. */
+	/** Запуск демонстрации жизненного цикла потоков при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(ThreadDemoService threadDemoService) {
-		return args -> threadDemoService.runThreadDemo();
+	public CommandLineRunner threadDemoRunner(ThreadLifecycleService threadLifecycleService) {
+		return args -> threadLifecycleService.runLifecycleDemo();
 	}
 
 }
