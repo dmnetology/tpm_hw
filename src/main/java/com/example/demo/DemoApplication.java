@@ -14,10 +14,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации volatile-флага и atomic-переменных при старте приложения. */
+	/** Запуск демонстрации deadlock, livelock и starvation при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(VolatileAtomicsDemoService volatileAtomicsDemoService) {
-		return args -> volatileAtomicsDemoService.runVolatileAtomicsDemo();
+	public CommandLineRunner threadDemoRunner(LockProblemsDemoService lockProblemsDemoService) {
+		return args -> lockProblemsDemoService.runLockProblemsDemo();
 	}
 
 }
