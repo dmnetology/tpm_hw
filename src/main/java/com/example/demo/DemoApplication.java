@@ -16,10 +16,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации Fork/Join при старте приложения. */
+	/** Запуск демонстрации многопоточных коллекций при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(ForkJoinDemoService forkJoinDemoService) {
-		return args -> forkJoinDemoService.runForkJoinDemo();
+	public CommandLineRunner threadDemoRunner(EventSystemDemoService eventSystemDemoService) {
+		return args -> eventSystemDemoService.runEventSystemDemo();
 	}
 
 }
