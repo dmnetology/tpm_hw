@@ -14,6 +14,7 @@ Spring Boot, встроенная база H2.
 - `task8` — Домашнее задание 8. Пул потоков (Thread Pool)
 - `task9` — Домашнее задание 9. Callable и Future
 - `task10` — Домашнее задание 10. CompletableFuture (асинхронное программирование)
+- `task11` — Домашнее задание 11. Fork/Join Framework
 
 ## Запуск
 
