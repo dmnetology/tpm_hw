@@ -16,10 +16,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации Callable и Future при старте приложения. */
+	/** Запуск демонстрации CompletableFuture при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(CallableFutureDemoService callableFutureDemoService) {
-		return args -> callableFutureDemoService.runCallableFutureDemo();
+	public CommandLineRunner threadDemoRunner(CompletableFutureDemoService completableFutureDemoService) {
+		return args -> completableFutureDemoService.runCompletableFutureDemo();
 	}
 
 }
