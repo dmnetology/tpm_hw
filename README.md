@@ -17,6 +17,7 @@ Spring Boot, встроенная база H2.
 - `task11` — Домашнее задание 11. Fork/Join Framework
 - `task12` — Домашнее задание 12. Многопоточные коллекции
 - `task13` — Домашнее задание 13. BlockingQueue и Producer-Consumer
+- `task14` — Домашнее задание 14. Виртуальные потоки (Project Loom)
 
 ## Запуск
 
