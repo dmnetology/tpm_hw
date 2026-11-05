@@ -16,10 +16,10 @@ public class DemoApplication {
 
 	}
 
-	/** Запуск демонстрации BlockingQueue при старте приложения. */
+	/** Запуск демонстрации виртуальных потоков при старте приложения. */
 	@Bean
-	public CommandLineRunner threadDemoRunner(BlockingQueueDemoService blockingQueueDemoService) {
-		return args -> blockingQueueDemoService.runBlockingQueueDemo();
+	public CommandLineRunner threadDemoRunner(VirtualThreadsDemoService virtualThreadsDemoService) {
+		return args -> virtualThreadsDemoService.runVirtualThreadsDemo();
 	}
 
 }
